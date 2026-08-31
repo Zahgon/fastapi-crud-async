@@ -1,10 +1,12 @@
-from fastapi import APIRouter
+from flask import Blueprint
 
-router = APIRouter()
+from app.responses import json_response
+
+router = Blueprint("ping", __name__)
 
 
-@router.get("/ping")
-async def pong():
+@router.route("/ping", methods=["GET"], provide_automatic_options=False)
+def pong():
     # some async operation could happen here
     # example: `notes = await get_all_notes()`
-    return {"ping": "pong!"}
+    return json_response({"ping": "pong!"})

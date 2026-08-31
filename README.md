@@ -1,8 +1,4 @@
-# Developing and Testing an Asynchronous API with FastAPI and Pytest
-
-## Want to learn how to build this?
-
-Check out the [post](https://testdriven.io/blog/fastapi-crud).
+# Developing and Testing an Asynchronous API with Flask and Pytest
 
 ## Want to use this project?
 
